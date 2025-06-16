@@ -1,0 +1,23 @@
+.btn {
+    border: 0;
+    font-size: 1.3em;
+}
+
+.developer {
+    color: #7A1CAC;
+}
+
+.hero {
+    width: 65%;
+}
+
+.tejas {
+    display:flex;
+    float: right;
+}
+
+.hero-buttons {
+    width: 65%;
+
+}
+

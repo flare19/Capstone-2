@@ -3,47 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Capstone 2</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <title>Portfolio project</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
-    <link href="./style.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="./style.css"/>
 </head>
 <body>
-    <!--top section-->
-    <section>
-        <div class="container">
-  <header class="d-flex justify-content-center py-3">
-    <ul class="nav nav-pills">
-      <li class="nav-item">
-        <a href="#" class="nav-link active" aria-current="page">Home</a>
-      </li>
-      <li class="nav-item">
-        <a href="#" class="nav-link">Features</a>
-      </li>
-      <li class="nav-item">
-        <a href="#" class="nav-link">Pricing</a>
-      </li>
-      <li class="nav-item">
-        <a href="#" class="nav-link">FAQs</a>
-      </li>
-      <li class="nav-item">
-        <a href="#" class="nav-link">About</a>
-      </li>
-    </ul>
-  </header>
+    <!--Top bar-->
+    <div class="container text-left my-4">
+        <div class="row">
+            <div class="col-1"><button type="button" class="btn btn-outline-dark ">Home</button></div>
+            <div class="col-1"><button type="button" class="btn btn-outline-dark">About</button></div>
+            <div class="col-1"><button type="button" class="btn btn-outline-dark">Blog</button></div>
+            <div class="col-1"><button type="button" class="btn btn-dark">Contact</button></div>
+        </div>
+    </div>
+
+    <!--Hero Section-->
+    <div class="container text-left my-5">
+        <div class="column">
+            <div class="tejas"><img src="./images/tejas.png" height="400px"/></div>
+            <div class="my-4 hero"><h2>Hi! I'm Tejas Lokhande</h2></div>
+            <div class="my-4 hero"><h1>WEB <span class="developer">DEVELOPER</span></h1></div>
+            <div class="my-4 hero"><p>I have always been passionate about developing web applications. It always fascinated me on how computers work and how the internet runs. I have been coding since I was 14 years old.</p></div>
+            <div class="hero-buttons container text-center mx-0 my-5 px-0">
+                <div class="row">
+                    <div class="col-3 text-center"><button type="button" class="btn btn-outline-dark">Projects &lt;/&gt;</button></div>
+                    <div class="col-2 text-center"><button type="button" class="btn btn-dark">Hire me</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--skills-->
+    <section class="my-5 mb-0">
+        <div class="container px-4 py-5" id="hanging-icons">
+  <h2 class="pb-2 border-bottom">Skills</h2>
+  <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+    <div class="col d-flex align-items-start">
+      <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+        <svg xmlns="http://www.w3.org/2000/svg" class="bi" width="1em" height="1em" aria-hidden="true" fill="currentColor" class="bi bi-filetype-html" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M14 4.5V11h-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5zm-9.736 7.35v3.999h-.791v-1.714H1.79v1.714H1V11.85h.791v1.626h1.682V11.85h.79Zm2.251.662v3.337h-.794v-3.337H4.588v-.662h3.064v.662zm2.176 3.337v-2.66h.038l.952 2.159h.516l.946-2.16h.038v2.661h.715V11.85h-.8l-1.14 2.596H9.93L8.79 11.85h-.805v3.999zm4.71-.674h1.696v.674H12.61V11.85h.79v3.325Z"/>
+        </svg>
+      </div>
+      <div>
+        <h3 class="fs-2 text-body-emphasis">HTML</h3>
+        <p>HTML is one of my strong suites, I can write massive codes in HTML without tiring myself out becuase I find it really fun to design websites on my own.</p>
+      </div>
+    </div>
+    <div class="col d-flex align-items-start">
+      <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+        <svg xmlns="http://www.w3.org/2000/svg"  class="bi" width="1em" height="1em" aria-hidden="true" fill="currentColor" class="bi bi-filetype-css" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M14 4.5V14a2 2 0 0 1-2 2h-1v-1h1a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5zM3.397 14.841a1.13 1.13 0 0 0 .401.823q.195.162.478.252.284.091.665.091.507 0 .859-.158.354-.158.539-.44.187-.284.187-.656 0-.336-.134-.56a1 1 0 0 0-.375-.357 2 2 0 0 0-.566-.21l-.621-.144a1 1 0 0 1-.404-.176.37.37 0 0 1-.144-.299q0-.234.185-.384.188-.152.512-.152.214 0 .37.068a.6.6 0 0 1 .246.181.56.56 0 0 1 .12.258h.75a1.1 1.1 0 0 0-.2-.566 1.2 1.2 0 0 0-.5-.41 1.8 1.8 0 0 0-.78-.152q-.439 0-.776.15-.337.149-.527.421-.19.273-.19.639 0 .302.122.524.124.223.352.367.228.143.539.213l.618.144q.31.073.463.193a.39.39 0 0 1 .152.326.5.5 0 0 1-.085.29.56.56 0 0 1-.255.193q-.167.07-.413.07-.175 0-.32-.04a.8.8 0 0 1-.248-.115.58.58 0 0 1-.255-.384zM.806 13.693q0-.373.102-.633a.87.87 0 0 1 .302-.399.8.8 0 0 1 .475-.137q.225 0 .398.097a.7.7 0 0 1 .272.26.85.85 0 0 1 .12.381h.765v-.072a1.33 1.33 0 0 0-.466-.964 1.4 1.4 0 0 0-.489-.272 1.8 1.8 0 0 0-.606-.097q-.534 0-.911.223-.375.222-.572.632-.195.41-.196.979v.498q0 .568.193.976.197.407.572.626.375.217.914.217.439 0 .785-.164t.55-.454a1.27 1.27 0 0 0 .226-.674v-.076h-.764a.8.8 0 0 1-.118.363.7.7 0 0 1-.272.25.9.9 0 0 1-.401.087.85.85 0 0 1-.478-.132.83.83 0 0 1-.299-.392 1.7 1.7 0 0 1-.102-.627zM6.78 15.29a1.2 1.2 0 0 1-.111-.449h.764a.58.58 0 0 0 .255.384q.106.073.25.114.142.041.319.041.245 0 .413-.07a.56.56 0 0 0 .255-.193.5.5 0 0 0 .085-.29.39.39 0 0 0-.153-.326q-.152-.12-.463-.193l-.618-.143a1.7 1.7 0 0 1-.539-.214 1 1 0 0 1-.351-.367 1.1 1.1 0 0 1-.123-.524q0-.366.19-.639.19-.272.527-.422t.777-.149q.456 0 .779.152.326.153.5.41.18.255.2.566h-.75a.56.56 0 0 0-.12-.258.6.6 0 0 0-.246-.181.9.9 0 0 0-.37-.068q-.324 0-.512.152a.47.47 0 0 0-.184.384q0 .18.143.3a1 1 0 0 0 .404.175l.621.143q.326.075.566.211t.375.358.135.56q0 .37-.188.656a1.2 1.2 0 0 1-.539.439q-.351.158-.858.158-.381 0-.665-.09a1.4 1.4 0 0 1-.478-.252 1.1 1.1 0 0 1-.29-.375"/>
+</svg>
+      </div>
+      <div>
+        <h3 class="fs-2 text-body-emphasis">CSS</h3>
+        <p>Another big part of HTML, the designing part. I can never get enough of spending hours on hours designing something that is so perfect that you yourself cannot recreate it again.</p>
+      </div>
+    </div>
+    <div class="col d-flex align-items-start">
+      <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+        <svg xmlns="http://www.w3.org/2000/svg" class="bi" width="1em" height="1em" aria-hidden="true" fill="currentColor" class="bi bi-fork-knife" viewBox="0 0 16 16">
+  <path d="M13 .5c0-.276-.226-.506-.498-.465-1.703.257-2.94 2.012-3 8.462a.5.5 0 0 0 .498.5c.56.01 1 .13 1 1.003v5.5a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5zM4.25 0a.25.25 0 0 1 .25.25v5.122a.128.128 0 0 0 .256.006l.233-5.14A.25.25 0 0 1 5.24 0h.522a.25.25 0 0 1 .25.238l.233 5.14a.128.128 0 0 0 .256-.006V.25A.25.25 0 0 1 6.75 0h.29a.5.5 0 0 1 .498.458l.423 5.07a1.69 1.69 0 0 1-1.059 1.711l-.053.022a.92.92 0 0 0-.58.884L6.47 15a.971.971 0 1 1-1.942 0l.202-6.855a.92.92 0 0 0-.58-.884l-.053-.022a1.69 1.69 0 0 1-1.059-1.712L3.462.458A.5.5 0 0 1 3.96 0z"/>
+</svg>
+      </div>
+      <div>
+        <h3 class="fs-2 text-body-emphasis">Pizza</h3>
+        <p>I love eating pizza and I make the world's best pizza.</p>
+      </div>
+    </div>
+  </div>
 </div>
     </section>
 
-    <!--Hero section-->
-    <section class="hero">
-        <div class="px-4 py-5 my-5 text-left">
-            <h1 class="display-5 fw-bold text-body-emphasis">Hello! I'm Tejas</h1>
-            <div class="col-lg-6 mx-auto">
-            <p class="lead mx-0">A programmer</p>
-            </div>
-        </div>
+    <!--Footer-->
+    <section>
+        <div class="container"> <footer class="py-3 my-4"> <ul class="nav justify-content-center border-bottom pb-3 mb-3"> <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li> <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li> <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li> <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li> <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li> </ul> <p class="text-center text-body-secondary">© 2025 Tejas Lokhande</p> </footer> </div>
     </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
 </body>
 </html>
